@@ -1,0 +1,6 @@
+<p>NEWページです</p>
+<%= form_with(model: @book,local: true) do |f| %>
+  <p>タイトル<%= f.text_field :title %></p>
+  <p>説明<%= f.text_field :body %></p>
+  <%= f.submit "Create book"%>
+<% end %>
